@@ -1,7 +1,7 @@
 <template>
   <section id="one" :class="cat.class">
     <div class="inner">
-      <a href="#" class="image"><img :src="cat.image" alt="" /></a>
+      <span class="image"><img :src="cat.image" alt="" /></span>
       <div class="content">
         <h2 class="major">{{ cat.title }}</h2>
         <p>{{ cat.description }}</p>
