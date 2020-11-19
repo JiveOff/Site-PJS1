@@ -247,6 +247,10 @@ input, select, textarea {
 		margin: 0 0 2em 0;
 	}
 
+	blockquote p {
+		margin: 0 0 0.5em 0;
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-family: Raleway, Helvetica, sans-serif;
@@ -2475,7 +2479,7 @@ input, select, textarea {
 
 	ul {
 		list-style: disc;
-		margin: 0 0 2em 0;
+		margin: 0 0 .5em 0;
 		padding-left: 1em;
 	}
 

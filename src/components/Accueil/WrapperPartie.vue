@@ -1,8 +1,8 @@
 <template>
   <section id="wrapper">
     <Partie v-for="category in categories"
-            v-bind:key="category.id"
-            v-bind:cat="category" />
+            :key="category.id"
+            :cat="category" />
   </section>
 </template>
 

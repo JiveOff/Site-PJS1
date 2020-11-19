@@ -1,9 +1,9 @@
 <template>
   <section id="one" :class="cat.class">
     <div class="inner">
-      <a href="#" class="image"><img :src="cat.image" alt="" /></a>
+      <span class="image"><img :src="cat.image" alt="" /></span>
       <div class="content">
-        <h2 class="major">{{ cat.title }}</h2>
+        <h2 :ref="'cat-' + cat.id" class="major">{{ cat.title }}</h2>
         <p>{{ cat.description }}</p>
         <div v-for="(element) in cat.articles" :key="element">
           <a @click="smoothPageSwitch({ path: 'article/' + element.id });" class="special">{{ element.titre }}</a>
