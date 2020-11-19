@@ -21,8 +21,6 @@
 <script>
 import { db } from '@/db.js'
 
-require('@/assets/css/main.css')
-
 export default {
   name: 'Article',
   props: ["siteProperties"],
@@ -67,7 +65,8 @@ body {
   background-image: url("https://media.istockphoto.com/photos/blue-abstract-background-or-texture-picture-id1138395421?k=6&m=1138395421&s=612x612&w=0&h=bJ1SRWujCgg3QWzkGPgaRiArNYohPl7-Wc4p_Fa_cyA=");
 }
 
-section img {
+img {
   width: 100%;
+  margin-bottom: 50px;
 }
 </style>
