@@ -50,14 +50,12 @@ export default {
   },
   methods: {
     async showArticle(fileUrl) {
-      console.log("pog")
       const res = await fetch(fileUrl);
       this.contenu = await res.text();
     }
   },
   watch: {
     article: function () {
-      console.log("poga")
       this.showArticle(this.article.fileUrl)
     }
   }

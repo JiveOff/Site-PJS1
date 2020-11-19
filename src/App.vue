@@ -1,5 +1,10 @@
 <template>
-  <div id="app" :style="{ 'background-image': 'linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url(' + $store.state.background + ')' }">
+  <div id="app">
+    <div class="img-gradient">
+      <transition name="slide-fade" mode="out-in">
+        <img class="bg-img" :src="$store.state.background" :key="$store.state.background" data-toggle="tooltip" data-placement="bottom" title="goTop" alt="">
+      </transition>
+    </div>
     <transition name="slide-fade" mode="out-in">
       <router-view/>
     </transition>
@@ -36,7 +41,20 @@ export default {
   background-attachment: fixed;
   background-position: center, center;
   -webkit-transition: all 3s ease;
-  transition: all 3s ease;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.bg-img {
+  pointer-events: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.img-gradient {
+  opacity: 0.2;
 }
 
 .slide-fade-enter-active {
@@ -47,7 +65,7 @@ export default {
 }
 .slide-fade-enter, .slide-fade-leave-to
   /* .slide-fade-leave-active below version 2.1.8 */ {
-  transform: translateX(10px);
+  transform: translateY(10px);
   opacity: 0;
 }
 </style>

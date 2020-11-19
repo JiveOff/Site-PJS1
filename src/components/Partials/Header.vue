@@ -1,17 +1,12 @@
 <template>
   <div>
-    <header id="header" :class="classToUse" v-if="$route.name === 'Accueil'">
-      <h1 @click="$router.push({ name: 'Accueil' });" style="cursor: pointer">{{ siteName }}</h1>
+    <header id="header" :class="classToUse">
+      <h1 @click="smoothPageSwitch('Accueil');" style="cursor: pointer">{{ siteName }}</h1>
       <nav>
         <a class="menuButton" @click="toggleMenu()">Menu</a>
       </nav>
     </header>
-    <header id="header" v-else>
-      <h1 @click="$router.push({ name: 'Accueil' });" style="cursor: pointer">{{ siteName }}</h1>
-      <nav>
-        <a class="menuButton" @click="toggleMenu()">Menu</a>
-      </nav>
-    </header>
+
     <nav id="menu" :style="menuShowStyle">
       <div class="inner" :style="menuShowStyle">
         <h2>Menu</h2>
@@ -37,6 +32,7 @@ export default {
     }
   },
   created () {
+    this.handleScroll()
     window.addEventListener('scroll', this.handleScroll);
   },
   destroyed () {
@@ -44,7 +40,11 @@ export default {
   },
   methods: {
     handleScroll () {
-      this.classToUse = (window.scrollY > 0) ? "" : "alt";
+      if(this.$route.name == "Accueil") {
+        this.classToUse = (window.scrollY > 0) ? "" : "alt";
+      } else {
+        this.classToUse = "";
+      }
     },
     toggleMenu () {
       if(this.menuShowStyle === "") {
@@ -55,7 +55,16 @@ export default {
     },
     menuGo(name) {
       this.toggleMenu();
+      this.smoothPageSwitch(name);
+    },
+    smoothPageSwitch(name) {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
       this.$router.push({ name });
+    }
+  },
+  watch: {
+    $route () {
+      this.handleScroll()
     }
   }
 }

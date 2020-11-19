@@ -28,7 +28,8 @@ import Background from '@/images/bg.jpg'
 
 const store = new Vuex.Store({
   state: {
-    background: Background
+    background: Background,
+    backgroundAfter: null
   }
 })
 

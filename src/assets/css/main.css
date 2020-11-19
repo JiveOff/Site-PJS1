@@ -36,6 +36,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
+	scroll-behavior: smooth;
 	line-height: 1;
 }
 
@@ -249,6 +250,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		color: #ffffff;
 		font-family: Raleway, Helvetica, sans-serif;
+		font-size: 30px;
 		font-weight: 700;
 		letter-spacing: 0.1em;
 		margin: 0 0 1em 0;
@@ -3189,13 +3191,13 @@ input, select, textarea {
 						line-height: inherit;
 					}
 
-						#header nav a[href="#menu"] {
+						#header nav a.menuButton {
 							box-shadow: none;
 							padding: 0 1em;
 							border-radius: 0;
 						}
 
-							#header nav a[href="#menu"]:hover, #header nav a[href="#menu"]:active {
+							#header nav a.menuButton:hover, #header nav a.menuButton:active {
 								background-color: inherit;
 							}
 
@@ -3203,14 +3205,14 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			#header nav a[href="#menu"] {
+			#header nav a.menuButton {
 				width: 4em;
 				white-space: nowrap;
 				text-indent: 4em;
 				position: relative;
 			}
 
-				#header nav a[href="#menu"]:before {
+				#header nav a.menuButton:before {
 					width: inherit;
 					position: absolute;
 					top: 0;
@@ -3781,6 +3783,12 @@ input, select, textarea {
 				flex-direction: row;
 			}
 
+			@media screen and (max-width: 480px) {
+				.wrapper.spotlight .image {
+					display: none;
+				}
+			}
+
 			.wrapper.spotlight .image {
 				border-radius: 100%;
 				margin: 0 3em 2em 0;
@@ -3792,6 +3800,7 @@ input, select, textarea {
 				.wrapper.spotlight .image img {
 					border-radius: 100%;
 					width: 100%;
+					opacity: 0.6;
 				}
 
 			.wrapper.spotlight .content {
