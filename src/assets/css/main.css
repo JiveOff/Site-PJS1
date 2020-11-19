@@ -3190,13 +3190,13 @@ input, select, textarea {
 						line-height: inherit;
 					}
 
-						#header nav a[href="#menu"] {
+						#header nav a.menuButton {
 							box-shadow: none;
 							padding: 0 1em;
 							border-radius: 0;
 						}
 
-							#header nav a[href="#menu"]:hover, #header nav a[href="#menu"]:active {
+							#header nav a.menuButton:hover, #header nav a.menuButton:active {
 								background-color: inherit;
 							}
 
@@ -3204,14 +3204,14 @@ input, select, textarea {
 
 		@media screen and (max-width: 480px) {
 
-			#header nav a[href="#menu"] {
+			#header nav a.menuButton {
 				width: 4em;
 				white-space: nowrap;
 				text-indent: 4em;
 				position: relative;
 			}
 
-				#header nav a[href="#menu"]:before {
+				#header nav a.menuButton:before {
 					width: inherit;
 					position: absolute;
 					top: 0;
