@@ -32,6 +32,7 @@ export default {
     }
   },
   created () {
+    this.handleScroll()
     window.addEventListener('scroll', this.handleScroll);
   },
   destroyed () {
