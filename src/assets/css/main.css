@@ -36,6 +36,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {
+	scroll-behavior: smooth;
 	line-height: 1;
 }
 
@@ -3782,6 +3783,12 @@ input, select, textarea {
 				flex-direction: row;
 			}
 
+			@media screen and (max-width: 480px) {
+				.wrapper.spotlight .image {
+					display: none;
+				}
+			}
+
 			.wrapper.spotlight .image {
 				border-radius: 100%;
 				margin: 0 3em 2em 0;
@@ -3793,6 +3800,7 @@ input, select, textarea {
 				.wrapper.spotlight .image img {
 					border-radius: 100%;
 					width: 100%;
+					opacity: 0.6;
 				}
 
 			.wrapper.spotlight .content {

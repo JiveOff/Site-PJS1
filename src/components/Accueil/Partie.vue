@@ -5,7 +5,7 @@
       <div class="content">
         <h2 class="major">{{ cat.title }}</h2>
         <p>{{ cat.description }}</p>
-        <a @click="$router.push({ path: 'article/1' })" class="special">Accéder à la categorie</a>
+        <a @click="smoothPageSwitch({ path: 'article/1' });" class="special">Accéder à la categorie</a>
       </div>
     </div>
   </section>
@@ -14,7 +14,13 @@
 <script>
 export default {
   name: "Partie",
-  props: ['cat']
+  props: ['cat'],
+  methods: {
+    smoothPageSwitch(obj) {
+      window.scrollTo({ top: 0, behavior: 'smooth' })
+      this.$router.push(obj);
+    }
+  }
 }
 </script>
 
