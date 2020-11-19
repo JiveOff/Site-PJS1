@@ -9,7 +9,7 @@
     <header id="header" v-else>
       <h1 @click="$router.push({ name: 'Accueil' });" style="cursor: pointer">{{ siteName }}</h1>
       <nav>
-        <a id="menu" class="menuButton" @click="toggleMenu()">Menu</a>
+        <a class="menuButton" @click="toggleMenu()">Menu</a>
       </nav>
     </header>
     <nav id="menu" :style="menuShowStyle">
