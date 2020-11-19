@@ -3,7 +3,7 @@
     <div class="inner">
       <ul class="copyright">
         <img class="logo-universite" src="../../images/u-paris.png" alt="Logo Université de Paris">
-        <li>Projet PJS1 2020 - IUT Paris Descartes</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        Projet PJS1 2020 - IUT Paris Descartes<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
       </ul>
     </div>
   </section>
