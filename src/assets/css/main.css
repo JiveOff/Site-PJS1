@@ -3445,7 +3445,7 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
-		@media screen and (max-width: 1280px) {
+		/*@media screen and (max-width: 1280px) {
 
 			#banner {
 				padding: 7em 0 8.25em 0 ;
@@ -3458,7 +3458,7 @@ input, select, textarea {
 				margin-bottom: -6.5em;
 			}
 
-		}
+		}*/
 
 		@media screen and (max-width: 980px) {
 
@@ -3557,7 +3557,7 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
-	@media screen and (max-width: 1280px) {
+	/*@media screen and (max-width: 1280px) {
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
@@ -3570,7 +3570,7 @@ input, select, textarea {
 			margin-bottom: -6.5em;
 		}
 
-	}
+	}*/
 
 	@media screen and (max-width: 980px) {
 
