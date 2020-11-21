@@ -49,8 +49,11 @@ export default {
 .bg-img {
   pointer-events: none;
   position: fixed;
-  width: 100%;
   height: 100%;
+  min-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .img-gradient {

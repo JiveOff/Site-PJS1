@@ -6,10 +6,8 @@ import Vuex from 'vuex'
 import VueShowdown from 'vue-showdown'
 
 import App from '@/App'
-
 import Accueil from '@/components/Accueil'
 import Article from '@/components/Article'
-
 import NotFound from '@/components/404'
 
 Vue.config.productionTip = false
