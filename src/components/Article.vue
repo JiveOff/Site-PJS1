@@ -40,6 +40,7 @@ export default {
         return;
       }
       this.$store.state.background = this.article.image;
+      document.title = this.article.titre + " | " + this.siteProperties.nomSite;
       this.showArticle(this.article.fileUrl);
     } catch(e) {
       this.$toastr.e(e, "Erreur")
