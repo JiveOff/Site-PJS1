@@ -22,7 +22,7 @@ Vue.use(VueShowdown, {
   flavor: 'github',
 })
 
-import Background from '@/images/bg.jpg'
+import Background from '@/images/bg.gif'
 
 const store = new Vuex.Store({
   state: {
