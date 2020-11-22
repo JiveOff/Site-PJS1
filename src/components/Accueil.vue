@@ -12,7 +12,7 @@ require('@/assets/css/main.css')
 import Banner from "@/components/Accueil/Banner";
 import WrapperPartie from "@/components/Accueil/WrapperPartie";
 
-import Background from '@/images/bg.jpg'
+import Background from '@/images/bg.gif'
 
 export default {
   name: 'Accueil',
