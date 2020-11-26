@@ -26,15 +26,15 @@
             <h1>Membres de l'équipe</h1>
             <h3>Antoine</h3>
             <blockquote>Salut, je suis Antoine et j'ai 18 ans. La réalité virtuelle a toujours été pour moi une fascination et celle-ci n'a (presque) plus aucun secret pour moi.</blockquote>
-            Articles rédigés: <a @click="smoothPageSwitch({ path: 'article/1' });">La créativité en VR</a><br />
+            Article rédigé: <a @click="smoothPageSwitch({ path: 'article/1' });">La créativité en VR</a><br />
             <br />
             <h3>Stefan</h3>
             <blockquote>Stefan. Je passe la majeur partie de mon temps à me perdre sur internet. La réalité virtuelle est une technologie que je suis de loin depuis quelques années et ce projet m'a permis de me pencher dessus.</blockquote>
-            Articles rédigés: <a @click="smoothPageSwitch({ path: 'article/4' });">Les limites de la VR</a><br />
+            Article rédigé: <a @click="smoothPageSwitch({ path: 'article/4' });">Les limites de la VR</a><br />
             <br />
             <h3>Thomas</h3>
             <blockquote>Salut, je m'appelle Thomas, j'ai 18 ans. Ce que j'aime c'est la cuisine et les jeux vidéos. Je connaissais déjà certains aspects de la réalité virtuelle tel que le jeux vidéo que j'ai pu tester chez un ami.</blockquote>
-            Articles rédigés: <a @click="smoothPageSwitch({ path: 'article/2' });">La sociabilité en VR</a><br />
+            Article rédigé: <a @click="smoothPageSwitch({ path: 'article/2' });">La sociabilité en VR</a><br />
             <br />
             <h3>Yannick</h3>
             <blockquote>Coucou, je suis Yannick, 18 ans. Je n'ai jamais expérimenté la réalité virtuelle mais ce projet m'a permis de la découvrir.</blockquote>
