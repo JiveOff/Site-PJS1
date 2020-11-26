@@ -29,7 +29,7 @@
             Article rédigé: <a @click="smoothPageSwitch({ path: 'article/1' });">La créativité en VR</a><br />
             <br />
             <h3>Stefan</h3>
-            <blockquote>Stefan. Je passe la majeur partie de mon temps à me perdre sur internet. La réalité virtuelle est une technologie que je suis de loin depuis quelques années et ce projet m'a permis de me pencher dessus.</blockquote>
+            <blockquote>Stefan. Je passe la majeure partie de mon temps à me perdre sur internet. La réalité virtuelle est une technologie que je suis de loin depuis quelques années et ce projet m'a permis de me pencher dessus.</blockquote>
             Article rédigé: <a @click="smoothPageSwitch({ path: 'article/4' });">Les limites de la VR</a><br />
             <br />
             <h3>Thomas</h3>
@@ -41,7 +41,7 @@
             Articles rédigés: <a @click="smoothPageSwitch({ path: 'article/3' });">La culture de la VR</a>, <a @click="smoothPageSwitch({ path: 'article/5' });">La VR et la culture populaire</a><br />
             <br /><br />
             <h3>Zakaria</h3>
-            <blockquote>Salut, je m'appelle Zakaria. Grace à ce projet, j'ai pu découvrir d'étonnante chose sur la VR et pu rentrer dans ce monde incroyable.</blockquote>
+            <blockquote>Salut, je m'appelle Zakaria. Grace à ce projet, j'ai pu découvrir d'étonnantes choses sur le monde de la VR durant ce projet.</blockquote>
             Articles rédigés: <a @click="smoothPageSwitch({ path: 'article/6' });">Les jeux vidéos en VR</a>, <a @click="smoothPageSwitch({ path: 'article/7' });">Voyages et expériences</a><br />
             <br /><br />
           </section>
