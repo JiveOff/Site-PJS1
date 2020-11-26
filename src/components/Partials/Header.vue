@@ -20,7 +20,7 @@
               <li><a @click="articleGo(article.id)">{{ article.titre }}</a></li>
             </span>
           </span>
-          <li><a @click="menuGo('Accueil')">A propos</a></li>
+          <li><a @click="menuGo('A propos')">A propos</a></li>
         </ul>
         <a class="close" @click="toggleMenu()">Close</a>
       </div>

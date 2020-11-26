@@ -9,6 +9,7 @@ import App from '@/App'
 import Accueil from '@/components/Accueil'
 import Article from '@/components/Article'
 import NotFound from '@/components/404'
+import APropos from '@/components/APropos'
 
 Vue.config.productionTip = false
 
@@ -48,6 +49,14 @@ let routes = [
     path: '/article/:id',
     name: 'Article',
     component: Article,
+    props: {
+      siteProperties
+    }
+  },
+  {
+    path: '/a-propos',
+    name: 'A propos',
+    component: APropos,
     props: {
       siteProperties
     }
