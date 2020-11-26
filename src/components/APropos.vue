@@ -22,7 +22,7 @@
               <div style="display: inline-block;width: 24%;"><img src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/91_Discord_logo_logos-512.png" style="width: 30%; margin-bottom: 10px;"><br>Discord</div>
               <div style="display: inline-block;width: 24%;"><img src="https://i.jiveoff.fr/zumt4.png"  style="width: 30%; margin-bottom: 10px;"><br>GitHub</div>
               <div style="display: inline-block;width: 24%;"><img src="https://stackedit.io/static/landing/logo.svg"  style="width: 80%; margin-bottom: 10px;"><br>StackEdit</div>
-              <div style="display: inline-block;width: 24%;"><img src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-logomark.png"  style="width: 55%; margin-bottom: 10px;"><br>Firebase</div>
+              <div style="display: inline-block;width: 24%;"><img src="https://firebase.google.com/downloads/brand-guidelines/PNG/logo-logomark.png"  style="width: 25%; margin-bottom: 10px;"><br>Firebase</div>
             </div><br />
             <h1>Membres de l'équipe</h1>
             <h3>Antoine</h3>
