@@ -12,13 +12,8 @@
         <h2>Menu</h2>
         <ul class="links">
           <li><a @click="menuGo('Accueil')">Accueil</a></li>
-          <span v-for="category in categories" :key="category.id">
-            <span v-if="category.articles.length == 1">
-              <li><a @click="articleGo(category.articles[0].id)">{{ category.title }}</a></li>
-            </span>
-            <span v-else v-for="article in category.articles" :key="article.id">
+          <span v-for="article in articles" :key="article.id">
               <li><a @click="articleGo(article.id)">{{ article.titre }}</a></li>
-            </span>
           </span>
           <li><a @click="menuGo('A propos')">A propos</a></li>
         </ul>
@@ -39,7 +34,7 @@ export default {
       classToUse: "alt",
       menuShowStyle: "",
       siteName: this.siteProperties.nomSite,
-      categories: []
+      articles: []
     }
   },
   created () {
@@ -91,7 +86,7 @@ export default {
     }
   },
   firestore: {
-    categories: db.collection('categories')
+    articles: db.collection('articles')
   }
 }
 </script>

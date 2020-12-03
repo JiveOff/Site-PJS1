@@ -30,7 +30,7 @@
             Article rédigé: <a @click="smoothPageSwitch({ path: 'article/1' });">La créativité en VR</a><br />
             <br />
             <h3>Stefan</h3>
-            <blockquote>Stefan. Je passe la majeure partie de mon temps à me perdre sur internet. La réalité virtuelle est une technologie que je suis de loin depuis quelques années et ce projet m'a permis de me pencher dessus.</blockquote>
+            <blockquote>Hello, je m'appelle Stefan et je passe la majeure partie de mon temps à me perdre sur internet. La réalité virtuelle est une technologie que je suis de loin depuis quelques années et ce projet m'a permis de me pencher dessus.</blockquote>
             Article rédigé: <a @click="smoothPageSwitch({ path: 'article/4' });">Les limites de la VR</a><br />
             <br />
             <h3>Thomas</h3>
