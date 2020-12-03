@@ -13,8 +13,8 @@
         <ul class="links">
           <li><a @click="menuGo('Accueil')">Accueil</a></li>
           <span v-for="category in categories" :key="category.id">
-            <span v-if="category.articles.length == 1">
-              <li><a @click="articleGo(category.articles[0].id)">{{ category.title }}</a></li>
+            <span v-if="category.articles.length === 1">
+              <li><a @click="articleGo(category.articles[0].id)">{{ category.articles[0].titre }}</a></li>
             </span>
             <span v-else v-for="article in category.articles" :key="article.id">
               <li><a @click="articleGo(article.id)">{{ article.titre }}</a></li>
