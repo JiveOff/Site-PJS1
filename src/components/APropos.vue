@@ -34,7 +34,7 @@
             Article rédigé: <a @click="smoothPageSwitch({ path: 'article/4' });">Les limites de la VR</a><br />
             <br />
             <h3>Thomas</h3>
-            <blockquote>Salut, je m'appelle Thomas, j'ai 18 ans. Ce que j'aime c'est la cuisine et les jeux vidéos. Je connaissais déjà certains aspects de la réalité virtuelle tel que le jeux vidéo que j'ai pu tester chez un ami.</blockquote>
+            <blockquote>Salut, je m'appelle Thomas, j'ai 18 ans. Ce que j'aime c'est la cuisine et les jeux vidéos. Je connaissais déjà certains aspects de la réalité virtuelle tel que le jeu vidéo que j'ai pu tester chez un ami.</blockquote>
             Article rédigé: <a @click="smoothPageSwitch({ path: 'article/2' });">La sociabilité en VR</a><br />
             <br />
             <h3>Yannick</h3>
